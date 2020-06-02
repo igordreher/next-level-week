@@ -6,6 +6,9 @@
 * {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+
 }
  
 html{
@@ -13,9 +16,11 @@ html{
 }
 
 body{
-    background: #f0f0f9;
+    background: #f0f0f7;
     color: var(--title-color);
     -webkit-font-smoothing: antialiased;
+
+
 }
 
 a{

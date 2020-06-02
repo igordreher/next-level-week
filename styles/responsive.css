@@ -16,4 +16,36 @@
     #page-home main{
         align-items: center;
     }
+    
+}
+
+@media (max-height: 590px){
+    #page-home{
+        background-position-y: 35px;
+    }
+    #page-home header a{
+        bottom: 0;
+    }
+    #page-home main{
+        justify-content: space-evenly;
+    }
+    #page-home main p{
+        margin-top: 0;
+    }
+    #page-home main a{
+        margin-top: 0;
+        height: 50px;
+    }
+}
+
+@media (max-width: 540px){
+    #page-home main{
+        margin-bottom: 5vw;
+    }
+    #page-home main h1{
+       font-size: 10vw;
+    }
+    #page-home main p{
+       font-size: 5vw;
+    }
 }
