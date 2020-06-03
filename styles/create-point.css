@@ -38,3 +38,84 @@ form{
 
     margin: 80px auto;
 }
+
+form fieldset{
+    border: 0;
+    margin-top: 48px;
+
+}
+
+form legend{
+    margin-bottom: 32px;
+}
+
+form legend h2{
+    font-size: 4;
+}
+
+form .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+form .field-group{
+    display: flex;
+}
+
+form input,
+form select{
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+form .field-group .field + .field{
+    margin-left: 24px;
+    
+}
+
+form .button{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+form button{
+    background-color: var(--primary-color);
+    width: 260px;
+    height: 48px;
+    
+    color: white;
+    font-size: 16px;
+    
+    border-radius: 8px;
+    border: 0;
+
+    margin-top: 24px;
+    
+    transition: background-color 400ms;
+
+}
+
+form button:hover{
+    background-color: #2fb86e;
+}
+
+
+
