@@ -132,7 +132,10 @@ form .items-grid{
     border: 2px solid #34cb79;
 }
 
-
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
+} 
 
 
 
@@ -163,6 +166,7 @@ form button{
 form button:hover{
     background-color: #2fb86e;
 }
+
 
 
 

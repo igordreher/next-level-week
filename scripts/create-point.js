@@ -1,4 +1,5 @@
 
+//********************* Select fields
 
 function fetchSelect(url,label,value){
     fetch(url)
@@ -46,8 +47,41 @@ function getCities(event){
     
 }
 
-
-
 document.querySelector('select[name=uf]').addEventListener('change', getCities)
+
+//************************** 'Ítems de coleta' list 
+
+const itemsToCollect = document.querySelectorAll('.items-grid li')
+const items = document.querySelector('input[name=items]')
+
+let selectedItems = []
+
+function handleSelectedItem(event){
+    let itemLi = event.target
+    let itemID = itemLi.dataset.id
+
+    //toggle css style
+    itemLi.classList.toggle('selected')
+
+    //Check if item is alredy selected
+    let alredySelected = selectedItems.findIndex(item => item==itemID)
+
+    if(alredySelected>=0){//If item is alredy selected,
+        //Filter item from array
+        selectedItems = selectedItems.filter(item => item!=itemID) 
+    }
+    else{// If not alredy selected
+        //Add item do array
+        selectedItems.push(itemID)
+    }
+    //Add items to hidden input
+    items.value = selectedItems
+}
+
+for( item of itemsToCollect){
+    item.addEventListener('click', handleSelectedItem)
+}
+
+
 
 
