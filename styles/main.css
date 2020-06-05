@@ -1,6 +1,8 @@
 :root{
     --title-color: #322153;
     --primary-color: #34cb79;
+    --background-color: #f0f0f7;
+    --button-hover: #2fa86e;
 }
 
 * {
@@ -16,7 +18,7 @@ html{
 }
 
 body{
-    background: #f0f0f7;
+    background: var(--background-color);
     color: var(--title-color);
     -webkit-font-smoothing: antialiased;
 
