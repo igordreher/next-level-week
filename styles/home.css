@@ -1,4 +1,5 @@
 #page-home{
+    min-height: 400px;
     height: 100vh;
     background: url('../assets/icones/home-background.svg') no-repeat;
     background-position: 35vw bottom;
@@ -23,11 +24,14 @@
     display: flex;
     font-weight: 700;
     color: var(--title-color);
+
+    align-items: flex-end;
 }
 
 #page-home header a span{
-    margin-right: 10px;
+    margin-right: 16px;
     background-image: url('../assets/icones/log-in.svg');
+    
     width: 20px;
     height: 20px;
 }

@@ -8,9 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
-
 }
  
 html{
@@ -21,8 +19,6 @@ body{
     background: var(--background-color);
     color: var(--title-color);
     -webkit-font-smoothing: antialiased;
-
-
 }
 
 a{

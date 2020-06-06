@@ -12,6 +12,11 @@
 
         left: 50%;
         transform: translateX(-50%);
+
+        align-items: center;
+    }
+    #page-home header a span{
+        padding-right: 20px;
     }
     #page-home main{
         align-items: center;
@@ -24,6 +29,7 @@
         background-position-y: 35px;
     }
     #page-home header a{
+        font-size: 12px;
         bottom: 0;
     }
     #page-home main{
@@ -36,9 +42,12 @@
         margin-top: 0;
         height: 50px;
     }
+    #page-home main a span{
+        height: 50px;
+    }
 }
 
-@media (max-width: 540px){
+@media (max-width: 580px){
     #page-home main{
         margin-bottom: 5vw;
     }
@@ -48,4 +57,19 @@
     #page-home main p{
        font-size: 5vw;
     }
+
+    #page-search-result .cards{
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-result header img,
+    #page-create-point header img{
+        width: 40%;
+    }
+    #page-search-result header a,
+    #page-create-point header a{
+        font-size: 12px;
+    }
+
+
 }
