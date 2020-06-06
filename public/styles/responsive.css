@@ -21,6 +21,18 @@
     #page-home main{
         align-items: center;
     }
+
+    #page-create-point form{
+        margin-left: 0;
+    }
+
+    #page-create-point form .field-group{
+        flex-direction: column;
+    }
+    form .field-group .field + .field{
+        margin-left: 0;
+    }
+    
     
 }
 
@@ -71,5 +83,10 @@
         font-size: 12px;
     }
 
-
+    form .items-grid{
+        grid-template-columns: 1fr;
+    }
+    form .button{
+        justify-content: center;
+    }
 }

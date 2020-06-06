@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% set bodyId = "page-home" %}
+{% set pageId = "page-home" %}
 {% set title = "Ecoleta" %}
 
 {% block styles %}
@@ -13,7 +13,8 @@
             <img src="./assets/icones/logo.svg" alt="Logomarca">
             <a href="/create-point">
                 <span></span>
-                    Cadastre aqui um ponto de coleta</a>
+                Cadastre aqui um ponto de coleta
+            </a>
         </header>
         <main>
             <h1>Seu marketplace de coleta de resíduos</h1>
@@ -22,7 +23,6 @@
                 <span></span>
                 <strong>Pesquisar pontos de coleta</strong>
             </a>
-
         </main>
     </div>
 {% endblock content %}
