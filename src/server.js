@@ -4,17 +4,24 @@ const server = express()
 //Configure Public Folder
 server.use(express.static("public"))
 
+//Utilize tamplate engine
+const nunjucks = require("nunjucks")
+nunjucks.configure("src/views",{
+    express: server,
+    noCache: true
+})
+
 //Configure server
 server.get("/", (req,res) => {
-    res.sendFile(__dirname + "/views/index.html")
+    return res.render("index.html")
 })
 
 server.get("/create-point", (req,res) => {
-    res.sendFile(__dirname + "/views/create-point.html")
+    return res.render("create-point.html")
 })
 
 server.get("/search-result", (req,res) => {
-    res.sendFile(__dirname + "/views/search-result.html")
+    return res.render("search-result.html")
 })
 
 // Start server
