@@ -100,3 +100,23 @@
 #modal form button:hover{
     background-color: var(--button-hover);
 }
+
+/* For point-created*/
+
+#modal.point-created{
+    background-color: #0E0A14ef;
+}
+#modal.point-created .content-box{
+    background-color: #00000000;
+}
+#modal.point-created .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point-created h1{
+    color: white;
+
+    margin-top: 32px;
+}

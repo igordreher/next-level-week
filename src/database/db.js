@@ -6,21 +6,21 @@ const db = new sqlite.Database('./src/database/database.db')
 
 module.exports = db
 // Utilize the object to operate
-// db.serialize( () => {
+db.serialize( () => {
 
-//     // Create a table
-//     // db.run(`
-//     //     CREATE TABLE IF NOT EXISTS places (
-//     //         id INTEGER PRIMARY KEY AUTOINCREMENT,
-//     //         image TEXT,
-//     //         name TEXT,
-//     //         address TEXT,
-//     //         address2 TEXT,
-//     //         city TEXT,
-//     //         state TEXT,
-//     //         items TEXT
-//     //     );
-//     // `)
+//     Create a table
+    db.run(`
+        CREATE TABLE IF NOT EXISTS places (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            image TEXT,
+            name TEXT,
+            address TEXT,
+            address2 TEXT,
+            city TEXT,
+            state TEXT,
+            items TEXT
+        );
+    `)
 
 //     // Insert data into table
 //     const query = `
@@ -61,4 +61,12 @@ module.exports = db
 //     //     console.log("Here is the data")
 //     //     console.log(rows)
 //     // })
-// })
+
+        //Delete data from database
+        // db.run(`DELETE FROM PLACES WHERE id=?`,[1],function(err){
+        //     if(err){
+        //         return console.log(err)
+        //     }
+        //     console.log("Registro deletado com sucesso")
+        // })
+})
