@@ -1,6 +1,9 @@
 const express = require("express")
 const server = express()
 
+// Get access to database
+const db = require("./database/db")
+
 //Configure Public Folder
 server.use(express.static("public"))
 
@@ -21,6 +24,7 @@ server.get("/create-point", (req,res) => {
 })
 
 server.get("/search-result", (req,res) => {
+    
     return res.render("search-result.html")
 })
 
