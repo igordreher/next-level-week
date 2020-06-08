@@ -101,11 +101,13 @@
 {% endblock content %}
 
 
+
+{% block modal %}
 {% if saved %}
-    {% block modal %}
         {% include "partials/point-created.html" %}
-    {% endblock %}
 {% endif %}
+
+{% endblock %}
 
 {% block scripts %}
 <script src="/scripts/create-point.js"></script>
